@@ -27,13 +27,11 @@
 ## Credenciais de Acesso
 
 **Nome de usuário:** Igor
-
 <br>
 
 **Senha:** 123
 
 **Nome de usuário:** Lucas
-
 <br>
 
 **Senha:** 123

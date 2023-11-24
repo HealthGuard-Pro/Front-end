@@ -1,25 +1,20 @@
-import { useState} from "react";
-import '../scss/Login.scss';
+import { useState } from "react";
+import "../scss/Login.scss";
 import avatar from "../assets/avatar.svg";
 
-//página de login
-function Login() {
+export default function Login() {
 
-  //variáveis dos inputs
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-    //capturando os valores dos inputs
-    const handleChange = async(event) => {
-      const { name, value } = event.target;
-      if (name === 'username') {
-        setUsername(value);
-      } else if (name === 'password') {
-        setPassword(value);
-      }
-    };
-
-
+  const handleChange = async (event) => {
+    const { name, value } = event.target;
+    if (name === "username") {
+      setUsername(value);
+    } else if (name === "password") {
+      setPassword(value);
+    }
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -30,11 +25,9 @@ function Login() {
       const response = await fetch("http://localhost:3000/usuarios");
       if (response.ok) {
         const users = await response.json();
-        //console.log(users);
         for (let i = 0; i < users.length; i++) {
           const usuario = users[i];
 
-          //validando
           if (usuario.nome == username && usuario.senha == password) {
             user = usuario;
             break;
@@ -42,25 +35,22 @@ function Login() {
         }
       }
       if (user) {
-
         alert("Login realizado com SUCESSO!!");
-        
 
-        const token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
+        const token =
+          Math.random().toString(16).substring(2) +
+          Math.random().toString(16).substring(2);
         sessionStorage.setItem("token-user", token);
         sessionStorage.setItem("user-object", JSON.stringify(user));
 
         window.location = "/home";
       } else {
-
         alert("Usuário e ou senha incorretos!");
-          
-          setUsername("");
-          setPassword("");
 
-          window.location = "/";
-        
-        
+        setUsername("");
+        setPassword("");
+
+        window.location = "/";
       }
     } catch (error) {
       console.log(error);
@@ -97,8 +87,4 @@ function Login() {
       </div>
     </>
   );
-};
-
-  
-
-export default Login;
+}

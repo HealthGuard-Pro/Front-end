@@ -8,7 +8,7 @@ import Relatorio from "../assets/Relatorio.svg";
 import Prototipo from "../assets/Prototipo.svg";
 import "../scss/Home.scss";
 
-const Home = () => {
+export default function Home() {
   return (
     <div className="home">
       <section className="banner">
@@ -102,5 +102,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

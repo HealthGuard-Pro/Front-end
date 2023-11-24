@@ -31,6 +31,8 @@
 
 **Senha:** 123
 
+---
+
 **Nome de usuário:** Lucas
 <br>
 

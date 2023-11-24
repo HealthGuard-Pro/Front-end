@@ -1,8 +1,37 @@
-# React + Vite
+# Akona Energy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🧍‍♂️ Informações dos Alunos
 
-Currently, two official plugins are available:
+- **Nome:** Igor Nunes Teixeira
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **RM:** 551099
+
+- **Turma:** 1ESPG (Se trasferiu esse semestre)
+
+<br>
+
+---
+
+<br>
+
+- **Nome:** Lucas Palamartschuk de Toledo
+
+- **RM:** 97913
+
+- **Turma:** 1ESPG
+
+<br>
+
+---
+
+## Credenciais de Acesso
+
+**Nome de usuário:** Igor
+**Senha:** 123
+
+**Nome de usuário:** Lucas
+**Senha:** 123
+
+## GitHub
+
+**Link do repositorio:** https://github.com/HealthGuard-Pro/Front-end
